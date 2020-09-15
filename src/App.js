@@ -1,26 +1,47 @@
 import React from 'react';
-import logo from './logo.svg';
+import Game from '../src/components/game/Game';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import PolarBears from './assets/images/PolarBears.jpg'
+import Tigers from './assets/images/Tigers.jpg'
+import Elephants from './assets/images/Elephant.png'
+import Sharks from './assets/images/sharks.jpg'
+
+function App (props) {
+  const PolarBears = {
+      name: 'Fairbanks PolarBears',
+      logos: './assets/images/PolarBears.jpg'
+  }
+  const Tigers = {
+      name: 'Anchorage Tigers',
+      logos: './assets/images/Tigers.jpg'
+  }
+
+  const Elephants = {
+      name :'Eagle River Elephants',
+      logos:'./assets/images/Elephant.png'
+  }
+  const Sharks = {
+      name:'Sitka Sharks',
+      logos:'./assets/images/sharks.jpeg'
+  }
+
+
+return (
+ <div className='App'>
+  <Game 
+  venue= 'LEM Sports Center'
+  homeTeam={PolarBears}
+  visitingTeam={Tigers}
+  />
+  <Game 
+  venue= 'Jackson Gym'
+  homeTeam={Elephants}
+  visitingTeam={Sharks}
+  />
+
+ </div>
+)
 }
 
 export default App;
