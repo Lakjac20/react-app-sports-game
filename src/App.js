@@ -2,10 +2,10 @@ import React from 'react';
 import Game from '../src/components/game/Game';
 import './App.css';
 
-import PolarBears from './assets/images/PolarBears.jpg'
-import Tigers from './assets/images/Tigers.jpg'
-import Elephants from './assets/images/Elephant.png'
-import Sharks from './assets/images/sharks.jpg'
+import PolarBears from "./assets/images/Polarbears.jpg";
+import Tigers from "./assets/images/Tigers.jpg";
+import Elephants from "./assets/images/Elephant.png";
+import Sharks from './assets/images/sharks.jpeg'
 
 function App (props) {
   const PolarBears = {

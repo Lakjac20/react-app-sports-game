@@ -1,3 +1,6 @@
+import React from "react";
+
+
 function ScoreBoard (props) {
     return (
         <div className='ScoreBoard'>
@@ -15,3 +18,5 @@ function ScoreBoard (props) {
         </div>
     )
 }
+
+export default ScoreBoard;
